@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rat.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- #feed back-->
+    <div class="feedback">
+        <div class="con">
+            <h1>how is todays session proceeding ?</h1>
+            <div class="emoji">
+                <div id="emoji">
+                <img src="s6.png"/>
+                <img src="s5.png"/>
+                <img src="s2.png"/>
+                <img src="s4.png"/>
+                <img src="s1.png"/>
+                <img src="s7.png"/>
+                </div>
+
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+
+            </div>
+            <div class="textbox">
+                <textarea cols="30" placeholder="Any suggestion about todays session ?"></textarea>
+            </div>
+            <div class="but">
+                <a href="#">submit</a>
+
+            </div> 
+          
+        </div>
+
+    </div>
+    <script>
+        var stars=document.getElementsByClassName("bx");
+        var emoji=document.getElementById("emoji");
+        stars[0].onclick=function(){
+            stars[0].style.color="gold";
+            stars[0].style. boxShadow="0px 5px 15px  gold";
+            stars[1].style.color="rgb(154, 144, 132)";
+            stars[2].style.color="rgb(154, 144, 132)";
+            stars[3].style.color="rgb(154, 144, 132)";
+            stars[4].style.color="rgb(154, 144, 132)";
+            emoji.style.transform="translateX(0px)"
+ 
+        }
+        stars[1].onclick=function(){
+            stars[0].style.color="gold";
+            stars[1].style.color="gold";
+            stars[2].style.color="rgb(154, 144, 132)";
+            stars[3].style.color="rgb(154, 144, 132)";
+            stars[4].style.color="rgb(154, 144, 132)";
+            emoji.style.transform="translateX(-100px)"
+ 
+        }
+        stars[2].onclick=function(){
+            stars[0].style.color="gold";
+            stars[1].style.color="gold";
+            stars[2].style.color="gold";
+            stars[3].style.color="rgb(154, 144, 132)";
+            stars[4].style.color="rgb(154, 144, 132)";
+            emoji.style.transform="translateX(-200px)"
+ 
+        }
+        stars[3].onclick=function(){
+            stars[0].style.color="gold";
+            stars[1].style.color="gold";
+            stars[2].style.color="gold";
+            stars[3].style.color="gold";
+            stars[4].style.color="rgb(154, 144, 132)";
+            emoji.style.transform="translateX(-300px)"
+ 
+        }
+        stars[4].onclick=function(){
+            stars[0].style.color="gold";
+            stars[1].style.color="gold";
+            stars[2].style.color="gold";
+            stars[3].style.color="gold";
+            stars[4].style.color="gold";
+            emoji.style.transform="translateX(-400px)"
+ 
+        }
+ </Script>
+</body>
+</html>
